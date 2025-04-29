@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    
+}
+/*1.- el padding son los bordes que va a tener por decirlo asi
+2.-el min-height es el minumo de altura que puede tener */
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: olive;
+}
+/* Primero imagina que estas codificando en una oartitura y puedes codificar en do, re, fa,etc.
+la conf vertical-align sive para establecer en cual de esas lineas quiere poner tu texto, imagen o lo que sea*/
+nav a {
+    vertical-align: bottom;
+}
+
+nav a:hover {
+    color: red;
+}
+/*cuando se cambia el tamaño de una imagen esta algunas veces tiende a desfigurarse
+entonces la conf aspect-ratio sirve para cambiar de escala la imagen sin que esta se deforme*/
+img {
+
+    max-height: 80px;
+    aspect-ratio: 1 / 1;
+}
+nav li,
+nav ul {
+    display: inline-block;
+    vertical-align: bottom;
+}
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+.spacer {
+    width: calc(100% - 84px - 196px - 32px - 60px);
+    }
+    /*esta conf es para hacer el margen de abajo mas grande para asi centrar las opciones*/
+    nav ul {
+        margin-bottom: 35px;
+    }
+    /*esta conf es para que cada item de la barra de tareas supeior tenga un espacio a la derecha*/
+nav ul li {
+    margin-right: 15px;
+}
+/*para que el ultimo item no tenga espacio a la derecha*/
+#last-item {
+    margin-right: 0px;
+}
+/*para que las opciones se hagan blancas*/
+nav ul li a:link,
+nav ul li a:visited {
+   color: white;}
+ #current-page {
+    color: darkgreen;
+}
+   /*para que las opciones se hagan marrones cuando el curso este sobre ellas*/
+
+nav ul li a:hover {
+       color: maroon;
+    }
+/*para que cuando una de las opciones sea seleccionada por el surco cambie a este color*/
+nav ul li a:active {
+    color: orange;
+}
+.contenedor, 
+.contenedor-services{
+    margin-top: 165px;
+}
+.contenedor, aside {
+    min-height: 57vh;
+    display: inline-block;
+
+}
+.row, .col{
+    display: inline-block;
+}
+.col {
+    min-width: 1006px;
+}
+aside {
+    width: 30vh;
+}
+section{
+    display: inline-block;
+}
+footer {
+background-color: olive;
+padding: 1rem 2rem;
+text-align: center;
+position: absolutes;
+}
+#side-bar {
+    width: 70vh;
+    min-height: 20vh;
+  display: block;
+    background-color: brown;}
+main p {
+    margin: 40px;
+    padding: 15px;
+  max-width:100vh ;  
+  border: 5px solid;
+  border-color:rgb(79, 4, 4);
+}
+section {
+    width: 70vh;
+    margin: auto;
+}
+footer img {
+   position: fixed;
+   top:  500px;
+   right: 40px;
+   
+}
+body > nav{
+    position: fixed;
+    top: 0px;
+    min-width: 100%;
+}
+h2 {
+    background-color: chocolate;
+}
+#introduction{
+    position: sticky;
+    top: 148px;
+    z-index: 10;
+   padding: 15px;
+
+}
+#cuerpo{
+    position: sticky;
+    top: 148px;
+    z-index: 11;
+    padding: 15px;
+}
+#conclusion{
+    position: sticky;
+    top: 148px;
+    z-index: 12; 
+    padding: 15px;
+}
+.floated-text{
+   box-sizing: border-box;
+    padding: 15px;
+    border: 5px solid chocolate;
+    max-width: 1300px;
+ 
+  
+}
+.floated-left{
+    min-height: 250px;
+aspect-ratio: 1-1;
+padding: 15px;
+    border: 5px solid chocolate;
+    float: left;
+}
+.floated-right{
+    min-height: 200px;
+    aspect-ratio: 1-1;
+    padding: 15px;
+    border: 5px solid chocolate;
+    float: right
+}
+#im-clear{
+    min-width: 300px;
+    aspect-ratio: 1-1;
+    clear: both;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px solid chocolate;
+}
